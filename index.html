@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+</head>
+<body>
+    <h2>What JavaScript can do!</h2>
+    <br>
+    <p id="trial">JavaScript can change HTML content</p>
+    <button type="button" onclick='document.getElementById("trial").innerHTML= "Hello JavaScript!"'>
+        Click Me
+    </button>
+    <br>
+    <br>
+    <br>
+    <h2>What JavaScript can do?</h2>
+    <p id="yeahyi">JavaScript can be used to change the HTML attributes.</p>
+    <br>
+    <button onclick= 'document.getElementById ("myImage") .src ="images/light-off-img.gif"; document.getElementById ("yeahyi") .innerHTML = "JavaScript can be used to change the HTML attributes."'>
+        Turn off the light.
+    </button>
+    <img src="images/light-off-img.gif" id="myImage" alt="the light has been switched off.">
+    <button onclick='document.getElementById ("myImage") .src="images/light-on-img.gif"; document.getElementById ("yeahyi") .innerHTML= "Yeahyii"'>
+        Turn on the light
+    </button>
+    
+</body>
+</html>
