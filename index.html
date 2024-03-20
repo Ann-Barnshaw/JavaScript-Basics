@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning JavaScript</title>
 </head>
+
 <body>
     <h2>What JavaScript can do!</h2>
     <br>
@@ -18,13 +20,44 @@
     <h2>What JavaScript can do?</h2>
     <p id="yeahyi">JavaScript can be used to change the HTML attributes.</p>
     <br>
-    <button onclick= 'document.getElementById ("myImage") .src ="images/light-off-img.gif"; document.getElementById ("yeahyi") .innerHTML = "JavaScript can be used to change the HTML attributes."'>
+    <button
+        onclick='document.getElementById ("myImage") .src ="images/light-off-img.gif"; document.getElementById ("yeahyi") .innerHTML = "JavaScript can be used to change the HTML attributes."'>
         Turn off the light.
     </button>
     <img src="images/light-off-img.gif" id="myImage" alt="the light has been switched off.">
-    <button onclick='document.getElementById ("myImage") .src="images/light-on-img.gif"; document.getElementById ("yeahyi") .innerHTML= "Yeahyii"'>
+    <button
+        onclick='document.getElementById ("myImage") .src="images/light-on-img.gif"; document.getElementById ("yeahyi") .innerHTML= "Yeahyii"'>
         Turn on the light
     </button>
-    
+    <br>
+    <br>
+    <br>
+    <p id="disappear">JavaScript can hide HTML elements</p>
+    <p id="appear" style="display: none;">Hello JavaScript</p>
+    <button type="button" onclick='document.getElementById ("disappear") .style .display="none"'>
+        Click Me
+    </button>
+    <button type="button" onclick='document.getElementById ("appear") .style .display="block"'>
+        Click Me
+    </button>
+    <br>
+    <br>
+    <h2>Script tag</h2>
+    <p id="demo"></p>
+    <br>
+    <h3>Demo JS function</h3>
+    <p id="demfunc">A paragraph</p>
+    <button type="button" onclick= 'myfunction()'>Click Me</button>
+
+
+<script>
+    document.getElementById ("demo") .innerHTML = "My First JavaScript!";
+</script>
+<script>
+    function myfunction () {
+        document.getElementById ("demfunc") .innerHTML = "Paragraph changed";
+    }
+</script>
 </body>
+
 </html>
