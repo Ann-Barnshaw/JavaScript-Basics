@@ -61,6 +61,22 @@
 <br>
 <br>
 <button type="button" onclick='print ()'>Print</button>
+<br>
+<br>
+<div id="output"></div>
+<br>
+<br>
+<div id="anne">
+    <h2>Trying out a loop statement</h2>
+</div>
+<br>
+<br>
+<!-- <button onclick='greet ("Ann")'>Click me</button> code not working will fix it later. -->
+
+
+
+
+
 
 
 
@@ -79,7 +95,26 @@
     document.write (5+6);
 </script>
 <script>
-    
+    for (let i = 1; i <= 10; i++) {
+    console.log(i);
+    let paragraph = document.createElement('p');
+    paragraph.textContent = i;
+    document.getElementById('output').appendChild(paragraph);
+}
+</script>
+<script>
+    for (let i = 1; i <= 10; i += 2) {
+        console.log (i);
+        let paragraph = document.createElement ('p');
+        paragraph.textContent = i;
+        document.getElementById('anne') .appendChild (paragraph);
+    }
+</script>
+<script>
+    function greet(name) {
+        windows.alert ('Hello', '' + name + '!');
+
+    }
 </script>
 </body>
 
